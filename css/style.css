@@ -1,0 +1,256 @@
+ /*
+Theme Name: (lakelouise)
+*/  
+   @font-face {
+   font-family: 'Raleway-Regular';
+   font-style: normal;
+   font-weight: normal;
+   src: url("../font/Raleway-Regular.woff") format("woff");
+   }
+   @font-face {
+      font-family: 'Raleway-SemiBold';
+      font-style: normal;
+      font-weight: normal;
+      src: url("../font/Raleway-SemiBold.woff") format("woff");
+   }
+   @font-face {
+      font-family: 'Raleway-ExtraBold';
+      font-style: normal;
+      font-weight: normal;
+      src: url("../font/Raleway-ExtraBold.woff") format("woff");
+   }
+   @font-face {
+      font-family: 'Raleway-Medium';
+      font-style: normal;
+      font-weight: normal;
+      src: url("../font/Raleway-Medium.woff") format("woff");
+   }
+   @font-face {
+   font-family: 'EB Garamond';
+   font-style: normal;
+   font-weight: normal;
+   src: url("../font/EBGaramond-VariableFont_wght.woff") format("woff");
+   }
+   @font-face {
+      font-family: 'EB Garamond Semi Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: url("../font/EBGaramond-SemiBold.woff") format("woff");
+   }
+   @font-face {
+      font-family: 'EB Garamond ExtraBold';
+      font-style: normal;
+      font-weight: normal;
+      src: url("../font/EBGaramond-ExtraBold.woff") format("woff");
+   }
+      html{overflow-x: hidden;overflow-y: hidden;}
+      body{overflow-x: hidden;display: flex;min-height: 100vh;flex-direction: column;background-color: #EFE6DE!important;overflow-y: hidden;}
+      main{flex: 1 0 auto;}
+      p{font-size: 26px;line-height: 42px;}
+    
+      .container{width: 100%!important;padding: 0 2rem;}
+      #all-preloader{height: 100dvh;position: fixed;width: 100%;background-color: #0D3F4E;z-index: 994;}
+      .box-preloader{height: 100dvh;position: fixed;width: 100%;background-color: #0D3F4E;z-index: 995;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+      .box-preloader svg{display: block;margin: 0 auto;width: 100%;max-width: 85%;}
+      #lake{max-width: 70%;}
+      .sumir{z-index: -996;display: none;visibility: hidden;}
+      .title{font-family: 'EB Garamond ExtraBold';color: #0D3F4E;font-size: 37px;}
+      .sub-title{font-size: 37px;color: #0D3F4E;font-family: 'EB Garamond ExtraBold';}
+   /* banner */
+      .banner{padding: 90px 0;position: relative;height: 100dvh;display: flex;align-items: center;background-image: url('../img/bg.jpg');background-position: center;background-size: cover;}
+      .banner .logo{max-width: 533px;width: 100%;object-fit: contain;display: block;margin: 0 auto;z-index: 1;position: relative;}
+      .banner h1{font-family: 'Raleway-Regular';color: #d7683b;text-align: center;letter-spacing: 6px;font-size: 1.3rem;text-transform: uppercase;margin-bottom: 37px;}
+      .banner h3,.banner h4{text-align: center;margin: 0;}
+      .banner h3 span{display: block;}
+      .manchas{position: absolute;right: 0;max-width: 228px;width: 100%;object-fit: contain;top: 40px;}
+      .folhas_verdes{position: absolute;width: 100%;object-fit: contain;bottom: -149px;max-width: 520px;left: -205px;z-index: 1;	animation: float 6s ease-in-out infinite;}
+      .condominios{background-image: url('../img/bg_grey.webp');padding: 70px 0;position: relative;background-position: center;background-repeat: no-repeat;background-size: cover;display: flex;align-items: center;}
+      .folhas_laranja{position: absolute;right: 0;bottom: -59px;max-width: 358px;width: 100%;display: block;object-fit: contain;}
+      #folhas_laranja{fill-opacity: 0;}
+      #folhas_laranja.fineshed{fill-opacity: 1;}
+      .condominios p.title{margin: 0;color: #435A50;text-align: center;font-size: 34px;font-family: 'Raleway-Regular';position: relative;z-index: 1;}
+      .condominios p strong{font-family: 'EB Garamond Semi Bold';}
+   /* Content */
+      /* .content-general{background-image: url('./img/other_bg.jpg');} */
+   /* Inscreva-se */
+      .inscreve-se{padding: 70px 0;position: relative;}
+      .manchas_laranjas{position: absolute;max-width: 206px;width: 100%;display: block;bottom: 0;left: 0;}
+      .folhas_verde_claro{position: absolute;right: 0;max-width: 210px;bottom: 0;}
+      .inscreve-se p{text-align: center;margin: 0;line-height: 42px;}
+      .inscreve-se label br{display: none;}
+      .inscreve-se .box-contact{max-width: 900px;display: block;margin: 74px auto 0 auto;position: relative;z-index: 1;}
+      .inscreve-se input:not(input[type="submit"]){background-color: transparent;border: none;border-bottom: 1.3px solid #0d3f4e;color: #0d3f4e;height: 1rem !important;}
+      .inscreve-se input[type="submit"]{background-color: #DE9555;border: none;font-size: 24px;display: block;padding: 10px 20px;max-width: 210px;width: 100%;border-radius: 5px;margin: 42px auto 0 auto;}
+      .inscreve-se .box-contact p{text-align: left;}
+      .inscreve-se .box-contact p label{color: #0D3F4E;font-family: 'EB Garamond ExtraBold';font-size: 20px;margin-bottom: 20px;display: inline-block;width: 100%;}
+   /* Detalhes */
+      .detalhes{position: relative;}
+      .detalhes h2{font-family: 'EB Garamond ExtraBold';color: #588F9C;font-size: 37px;text-align: center;}
+      .detalhes h3{font-family: 'EB Garamond ExtraBold';color: #435a50;font-size: 37px;text-align: center;margin: 0;}
+      .detalhes p{color: #435a50;font-family: 'Raleway-Regular';line-height: 49px;font-size: 26px;}
+      .detalhes .family{width: 89%;height: auto;z-index: 2;position: relative;object-fit: contain;}
+      .detalhes .bar{position: absolute;bottom: -16px;width: 102%;left: -3px;transform: rotate(358deg);z-index: 3;}
+      .detalhes .row{margin-top: 70px;}
+      .detalhes .content{padding: 6px 0 72px 226px;}
+      .detalhes .flex{display: flex;align-items: flex-end;justify-content: flex-end;}
+      .detalhes figure{position: relative;margin: 0;}
+      .manchas_detalhes{position: absolute;z-index: 1;left: -19px;max-width: 583px;bottom: 98px;width: 100%;}
+      .folhas_laranjas_detalhes{position: absolute;z-index: 4;bottom: -155px;right: -111px;max-width: 437px;}
+   /* Galeria */
+      .galeria{margin-top: 166px;}
+      .galeria .divider{margin: 90px 0;}
+      .divider{background-color: #D7683B!important;}
+      .galeria .carousel .carousel-item{width: 400px;height: 100%;}
+      .galeria .carousel{height: 473px;}
+      .galeria .carousel .carousel-item{padding: 0 10px;}
+      .galeria .carousel .carousel-item .infos{display: flex;justify-content: space-between;padding-top: 10px;}
+      .galeria .carousel .carousel-item .infos span{color: #435A50;font-family: 'Raleway-ExtraBold';}
+      .box-buttons{display: flex;justify-content: center;gap: 0 20px;margin-bottom: 40px;}
+      .box-buttons button{background-color: transparent;border: none;transition: ease-in-out .8s;height: 50px;width: 50px;border-radius: 50%;}
+      .box-buttons button:hover{cursor: pointer;border: 1px solid #D7683B;transition: ease-in-out .8s;}
+      .box-buttons i{color: #D7683B;font-size: 18px;}
+   /* Sobre */
+      .sobre{position: relative;padding: 0 2rem;}
+      .sobre .box{background-color: #728D79;margin-top: 90px;position: relative;z-index: 2;padding: 80px 50px;}
+      .sobre h2{font-family: 'EB Garamond ExtraBold';position: relative;z-index: 1;margin: 0;font-size: 37px;}
+      .sobre h3{text-align: center;font-family: 'Raleway-Medium';position: relative;z-index: 1;font-size: 14px;margin: 0;letter-spacing: 4px;}
+      .sobre p{font-family: 'Raleway-Regular';position: relative;z-index: 1;padding-right: 86px;}
+      .sobre .box img.logo{max-width: 220px;display: block;margin: 0 auto;box-sizing: border-box;position: relative;z-index: 1;}
+      .sobre .box .folhas_verdes_sobre{position: absolute;left: -476px;top: -91px;z-index: 3;max-width: 549px;width: 100%;}
+      .sobre .box .manchas_laranja_sobre{position: absolute;right: -39%;bottom: -167px;max-width: 557px;width: 100%;object-fit: contain;}
+      .sobre img.responsive-img{max-width: 223px;width: 100%;display: block;margin-top: 22px;margin-right: 27px;box-sizing: border-box;}
+      .sobre .box-logo{display: flex;justify-content: center;align-items: center;flex-direction: column;}
+   /* Rodapé */
+      footer{background-image: url('../img/bg_grey.webp');background-position: center;background-repeat: no-repeat;background-size: cover;margin-top: 117px;padding: 56px 0;}
+      footer p{color: #0D3F4E!important;text-align: center;margin: 0;font-family: "Montserrat", system-ui;font-weight: 500;font-size: 17px;}
+      footer p a{color: #0D3F4E!important;font-weight: 800;}
+   /* Geral */
+      .content-general{position: relative;}
+      .content-general img.bg-general {position: absolute;height: 108%;left: 0;width: 100%;top: 50%;transform: rotate(0deg) translateY(-50%);z-index: -1;opacity: 42%;object-fit: cover;}
+      .inscreve-se input[type="submit"]{max-width: 100%;}
+      .inscreve-se input[type="submit"]{padding: 10px 20px;max-width: 210px;}
+      #preloader,.box-preloader svg{fill-opacity: 0;}
+      #preloader.fineshed{fill-opacity: 1;}
+
+      @media only screen and (min-width:992px) and (max-width : 1280px){
+         .banner .logo,.folhas_verdes{max-width: 400px;}
+         .folhas_laranja{max-width: 270px;}
+         .inscreve-se .box-contact{max-width: 750px;}
+         .manchas_laranjas,.folhas_verde_claro{max-width: 140px;}
+         .detalhes .content {padding: 6px 0 72px 39px;}
+         .detalhes p{line-height: 39px;}
+      }
+
+   /* Breakpoints Mobile */
+      @media only screen and (min-width:780px) and (max-width : 992px){
+         .folhas_verdes{max-width: 346px;left: -129px;}
+         .manchas{max-width: 168px;}
+         .folhas_laranja{max-width: 238px;}
+         .banner{height: auto;}
+         .banner .logo {max-width: 445px;}
+         .condominios p.title{font-size: 17px;line-height: 24px;}
+         .detalhes p{line-height: 42px;}
+         .detalhes h3,.detalhes h2,.inscreve-se p{font-size: 25px;}
+         .detalhes .content{padding-left: 40px;padding-right: 40px;}
+         .inscreve-se .box-contact p label{font-size: 18px;}
+         .sobre .box .folhas_verdes_sobre {left: -140px;top: -148px;max-width: 339px;}
+         .sobre p {font-family: 'Raleway-Regular';position: relative;z-index: 1;margin: 10px 0;font-size: 17px;line-height: 26px;padding-right: 0;}
+         .sobre h2{font-size: 26px;}
+         .sobre .box{padding: 40px 50px;}
+         .sobre .box .manchas_laranja_sobre {max-width: 416px;}
+         .manchas_laranjas,.folhas_verde_claro{max-width: 125px;}
+         .inscreve-se input[type="submit"] {padding: 20px 20px;max-width: 303px;margin: 0 auto;}
+      }
+      @media only screen and (min-width:480px) and (max-width : 780px){
+         .banner{height: auto;}
+         .banner h1{font-size: 11px;}
+         .banner h3, .banner h4{font-size: 16px;}
+         .banner p{font-size: 17px;line-height: 29px;}
+         .manchas{max-width: 121px;}
+         .banner .logo{max-width: 220px;}
+         .folhas_verdes{bottom: -75px;max-width: 183px;left: -78px;}
+         .folhas_laranja{max-width: 142px;bottom: 0;}
+         .condominios p.title{font-size: 13px;line-height: 20px;}
+         .inscreve-se p{font-size: 20px;line-height: 27px;}
+         .condominios{padding: 27px 0;}
+         .inscreve-se .box-contact p label{font-size: 16px;}
+         .inscreve-se .box-contact p br{display: none!important;}
+         .inscreve-se input[type="submit"] {padding: 11px 20px;max-width: 193px;}
+         .manchas_laranjas{max-width: 61px;}
+         .folhas_verde_claro{max-width: 103px;}
+         .detalhes .row{margin-top: 0;}
+         .manchas_detalhes{max-width: 386px;}
+         .detalhes .bar{bottom: 0;}
+         .detalhes p{line-height: clamp(2rem, -2rem + 3.75vw, 4.5rem);font-size: 13px;}
+         .detalhes h2,.detalhes h3{font-size: 18px;margin: 10px 0;}
+         .detalhes .content{padding: 0px 2rem 85px 2rem;}
+         .folhas_laranjas_detalhes {bottom: -55px;right: 0;max-width: 193px;}
+         .galeria {margin-top: 84px;}
+         .sobre {margin-top: 50px;}
+         .sobre img.responsive-img{max-width: 100px;}
+         .sobre h3,.sobre h2{font-size: 15px;margin: 0;}
+         .sobre .box .folhas_verdes_sobre{max-width: 132px;left: -45px;top: -59px;}
+         .sobre h2 {font-size: 18px;line-height: 25px;}
+         .sobre .box{margin-top: 48px;padding: 20px 15px;}
+         .sobre p {font-size: 15px;line-height: 22px;margin: 10px 0;padding-right: 0;}
+         .sobre .box .manchas_laranja_sobre {right: -66px;bottom: -50px;max-width: 145px;}
+      }
+      @media only screen and (max-width : 480px){
+         .banner{height: auto;}
+         .banner h1{font-size: 11px;}
+         .banner p{font-size: 13px;line-height: 23px;}
+         .sub-title{font-size: 18px;}
+         .manchas{max-width: 121px;}
+         .banner .logo{max-width: 220px;}
+         .folhas_verdes{bottom: -75px;max-width: 183px;left: -78px;}
+         .folhas_laranja{max-width: 142px;bottom: 0;}
+         .condominios p.title{font-size: 13px;line-height: 20px;}
+         .inscreve-se p{font-size: 15px;line-height: 22px;}
+         .condominios{padding: 27px 0;}
+         .inscreve-se .box-contact p label{font-size: 13px;}
+         .inscreve-se .box-contact p br{display: none!important;}
+         .inscreve-se input[type="submit"] {padding: 11px 20px;max-width: 193px;}
+         .manchas_laranjas{max-width: 61px;}
+         .manchas_detalhes{max-width: 227px;left: 0;}
+         .detalhes .bar{bottom: 0;}
+         .folhas_verde_claro{max-width: 103px;}
+         .detalhes .row{margin-top: 30px;}
+         .detalhes p{line-height: clamp(2rem, -2rem + 3.75vw, 4.5rem);}
+         .detalhes .content{padding: 20px 2rem;}
+         .detalhes h2,.detalhes h3{font-size: 13px;}
+         .detalhes .content{padding-left: 40px;padding-right: 40px;}
+         .folhas_laranjas_detalhes {bottom: -55px;right: 0;max-width: 193px;}
+         .galeria {margin-top: 84px;}
+         .galeria .carousel .carousel-item .infos{padding: 10px 40px;}
+         .sobre img.responsive-img{max-width: 100px;}
+         .sobre h3,.sobre h2{font-size: 15px;margin: 0;}
+         .sobre .box .folhas_verdes_sobre{max-width: 132px;left: -45px;top: -59px;}
+         .sobre h2{font-size: 15px;}
+         .sobre .box{margin-top: 48px;padding: 20px 15px;}
+         .detalhes p{font-size: 14px;}
+         .sobre p{font-size: 11px;line-height: 17px;padding-right: 0;}
+         .sobre .box .manchas_laranja_sobre {right: -66px;bottom: -50px;max-width: 145px;}
+      }
+/* Keyframes */
+      /* .folhas_laranja,.folhas_verde_claro,.folhas_laranjas_detalhes,.sobre .box .folhas_verdes_sobre{animation: float 6s ease-in-out infinite;}
+      @keyframes float {
+         0% {
+
+            transform: translatey(0px);
+         }
+         50% {
+            transform: translatey(-20px);
+         }
+         100% {
+            transform: translatey(0px);
+         }
+      }     
+      ::-webkit-scrollbar {
+         width: 6px;
+         border-radius: 10px;
+       }
+       
+       ::-webkit-scrollbar-thumb {
+         background: rgba(1, 2, 3, 0.582);
+         border-radius: 10px;
+       } */

@@ -28,16 +28,3 @@
 
 ---
 
-## 📁 Estrutura de Pastas
-
-lakelouise/
-├── index.html
-├── css/
-│ ├── materialize.css
-│ ├── materialize.min.css
-│ └── style.css
-├── img/
-│ ├── banner.webp
-│ └── ...
-├── font/
-│ └── *.woff

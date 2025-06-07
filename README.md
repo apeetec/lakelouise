@@ -27,4 +27,4 @@
 - ✅ Layout adaptado para múltiplas resoluções de tela
 
 ---
-
+Link da prévia do site: https://apeetec.github.io/lakelouise/
